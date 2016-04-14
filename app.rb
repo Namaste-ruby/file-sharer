@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'json'
 require_relative 'models/file'
+require_relative 'config/environments'
 
 class FileSharingAPI < Sinatra::Base
 

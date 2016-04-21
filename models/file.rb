@@ -6,7 +6,7 @@ require 'sequel'
 class SimpleFile < Sequel::Model
   include EncryptableModel
   many_to_one :users
-  set_allowed_columns :filename, :description, :file_extension, :remark, :document
+  set_allowed_columns :filename, :description, :file_extension, :remark
 
   def document=(document_plaintext)
     @document = document_plaintext

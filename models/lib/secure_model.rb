@@ -3,7 +3,7 @@ require 'rbnacl/libsodium'
 
 # Makes a model EncryptableModel
 # - Required: model must have nonce attribute
-module EncryptableModel
+module SecureModel
   def key
     @key ||= Base64.strict_decode64(ENV['DB_KEY'])
   end

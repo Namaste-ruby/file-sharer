@@ -11,7 +11,6 @@ Sequel.migration do
       String :document_encrypted, text: true
       String :file_extension, null: false, default: ''
       String :remark, null: false, default: 'None'
-      String :nonce
 
     end
   end

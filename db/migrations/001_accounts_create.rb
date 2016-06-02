@@ -2,7 +2,7 @@ require 'sequel'
 
 Sequel.migration do
   change do
-    create_table(:accounts) do
+    create_table(:base_accounts) do
       primary_key :id
 
       String :username, null: false, unique: true
